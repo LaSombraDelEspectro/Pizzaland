@@ -1,0 +1,17 @@
+
+* {
+    padding: 0px;
+	margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #ffd867;
+}
+
+.center {
+    text-align: center;
+}
+
+label {
+    color: black;
+}

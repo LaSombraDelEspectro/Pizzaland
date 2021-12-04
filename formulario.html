@@ -1,0 +1,68 @@
+<!--
+Fecha de creación: 03 de Diciembre del 2021
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pizzaland</title>
+		<meta name="author" content="Ángel">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/barraNav.css">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+    <body>
+        <header class="">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Pizzaland</a></li>
+                    <li class="item-r"><a href="formulario.html">Danos tu opinión</a></li>
+                    <li class="item-r"><a href="ubicaciones.html">¿Dónde están los locales?</a></li>
+                    <li class="item-r"><a href="acerca.html">¿Quiénes somos?</a></li>
+                </ul>
+            </div>
+        </header>
+        <br>
+        <main class="center">
+            <form action="Enviar.php" method="post" enctype="text/plain">
+                <!-- Resetear -->
+                <input type="reset" value="Restaurar formulario"><br>
+                <!-- 1 -->
+                <label for="Nom">Nombre Completo:</label><br>
+                <input type="text" id="Nom" name="Nombre" value="" size="30" placeholder="Tu Nombre Completo" required><br>
+                <!-- 2 -->
+                <label for="Col">Colonia:</label><br>
+                <input type="text" id="Col" name="Colonia" value="" size="30" placeholder="Tu Colonia" required><br>
+                <!-- 3 -->
+                <label for="Eda">Edad:</label><br>
+                <input type="number" id="Eda" name="Edad" value="" size="3" placeholder="Tu Edad" required><br><br>
+
+                <!-- 4 -->
+                <label for="Usa">¿Ya había usado la página antes?</label><br>
+                <input type="text" id="Usa" name="Usado" value="" size="30" placeholder="¿La había usado?" required><br>
+                <!-- 5 -->
+                <label for="Inc">¿Tuvo algún inconveniente con la página? De ser así explique porque</label><br>
+                <input type="text" id="Inc" name="inconveniente" value="" size="30" placeholder="¿Lo tuvo?" required><br>
+                <!-- 6 -->
+                <label for="Vol">¿Volverá usar esta página?</label><br>
+                <input type="radio" id="Cla1" name="Vol" value="S1" required>
+                <label for="Cla1">Claro</label><br>
+                <input type="radio" id="Jam1" name="Vol" value="N1" required>
+                <label for="Jam1">Jamas</label><br>
+                <!-- 7 -->
+                <label for="Rec">¿Nos recomendaria?</label><br>
+                <input type="radio" id="Cla2" name="Rec" value="S2" required>
+                <label for="Cla2">Claro</label><br>
+                <input type="radio" id="Jam2" name="Rec" value="N2" required>
+                <label for="Jam2">Jamas</label><br>
+                <!-- 8 -->
+                <label for="Con">¿Le gustaría darnos algún consejo?</label><br>
+                <textarea name="textarea" rows="10" cols="50" value="" placeholder="Escribe aquí" ></textarea><br><br>
+                <!-- Enviar -->
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+    </body>
+</html>
